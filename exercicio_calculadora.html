@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        <button onclick="alternarTema()">Alterar Tema</button>
+        <div class="historico">
+            <h3>Histórico de Cálculo</h3>
+            <ul id="historico-calc"></ul>
+        </div>
+        <div class="tela">
+            <input type="text" id="resultado" readonly>
+        </div>
+        <div class="botoes">
+            <button onclick="adicionarAoVisor('7')">7</button>
+            <button onclick="adicionarAoVisor('8')">8</button>
+            <button onclick="adicionarAoVisor('9')">9</button>
+            <button onclick="limparVisor()">Apagar</button>
+            <button onclick="adicionarAoVisor('4')">4</button>
+            <button onclick="adicionarAoVisor('5')">5</button>
+            <button onclick="adicionarAoVisor('6')">6</button>
+            <button onclick="adicionarAoVisor('*')">*</button>
+            <button onclick="adicionarAoVisor('1')">1</button>
+            <button onclick="adicionarAoVisor('2')">2</button>
+            <button onclick="adicionarAoVisor('3')">3</button>
+            <button onclick="adicionarAoVisor('-')">-</button>
+            <button onclick="elevarAoQuadrado()">x²</button>
+            <button onclick="calcularRaiz()">√</button>
+            <button onclick="adicionarAoVisor('0')">0</button>
+            <button onclick="adicionarAoVisor('.')">,</button>
+            <button onclick="adicionarAoVisor('%')">%</button>
+            <button onclick="adicionarAoVisor('+')">+</button>
+            <button onclick="calcular()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
